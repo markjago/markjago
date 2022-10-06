@@ -1,7 +1,0 @@
-# config.yaml
-baseURL: https://markjago.net
-title: Mark Jago
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
