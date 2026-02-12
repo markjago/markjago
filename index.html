@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta name="generator" content="Hugo 0.141.0">
-    <meta charset="UTF-8">
-    <meta name="description"
-      content="Truthmaker Semantics">
-    <meta name="author"
-      content="The Truthmakers">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Truthmaker Semantics</title>
-    <link rel="icon"
-      type="image/png"
-      href="data:image/png;base64,">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-    
-    
-    <link rel="stylesheet" href="https://truthmakersemantics.github.io/css/custom.797968642e07cbb7ebc0cf916aa0d7442aafd251b7374d2e1baf496a9e564670.css" integrity="sha256-eXloZC4Hy7frwM&#43;RaqDXRCqv0lG3N00uG69Jap5WRnA=">
-    
-    <script src="https://kit.fontawesome.com/1d773f205f.js" crossorigin="anonymous"></script>
-    <script src="/js/nav.js"></script>
+    <head>
+	<meta name="generator" content="Hugo 0.140.2">
+        <meta charset="UTF-8">
+        <meta name="description"
+              content="Mark Jago">
+        <meta name="author"
+              content="Mark Jago">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>Mark Jago</title>
+        <link rel="icon"
+              type="image/png"
+              href="data:image/png;base64,">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <link href="/css/custom.css" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/1d773f205f.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+        <script>
+            function showDiv() {
+        var x = document.getElementById("menu-items");
+        if (x.style.display === "none") {
+        x.style.display = "inline-flex";
+        } else {
+        x.style.display = "none";
+        }
+        }
+
+         
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+          document.getElementById("showNavButton").style.display = "none";
+          document.getElementById("hideNavButton").style.display = "block";
+        }
+
+         
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+          document.getElementById("hideNavButton").style.display = "none";
+          document.getElementById("showNavButton").style.display = "block";
+        }
+
+            </script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
 
@@ -51,182 +74,275 @@
  
 </style>
 
-    
-    
-    
-  </head>
-  <body>
+        
+        
+        
+    </head>
+    <body>
 
-    
-  <nav class="header navbar sticky-top">
+      
+
+
+
+
+
+<nav class="header navbar sticky-top">
     <div class="container-fluid px-5">
       <div class="container-sm">
+        
+
+        
+
+
+
+
+
         <div class="container-sm">
-          <a class="menu-title header-TMS" href="/"> ⊩ </a>
-          <a id="showNavButton" class="menu-title menu-button" onclick="toggleNav(true,'myNav','showNavButton','hideNavButton')"><i class="fa-solid fa-angles-down"></i></a>
-          <a id="hideNavButton" class="menu-title menu-button" onclick="toggleNav(false,'myNav','showNavButton','hideNavButton')"><i class="fa-solid fa-angles-up"></i></a>
+                <a class="menu-title header-TMS" href="/"> ⊩ </a>
+                <a id="showNavButton" class="menu-title menu-button" onclick="openNav()"><i class="fa-solid fa-angles-down"></i></a>
+                <a id="hideNavButton" class="menu-title menu-button" onclick="closeNav()"><i class="fa-solid fa-angles-up"></i></a>
         </div>
       </div>
     </div>
-  </nav>
+</nav>
+
+
+
+<div id="myNav" class="overlay">
+
   
-  <div id="myNav" class="overlay">
+  <div class="overlay-content">
     
-    <div class="overlay-content">
-      
-        <div class="menu-item">
-          
-          <a class="nav-link link-secondary" href="/">About</a>
-          
-        </div>
-      
-        <div class="menu-item">
-          
-          <a class="nav-link link-secondary">Conferences</a>
-            
-              <div class="menu-item">
-                <a class="nav-link link-secondary" href="/aitms/2025/">2025</a>
-              </div>
-            
-              <div class="menu-item">
-                <a class="nav-link link-secondary" href="/aitms/2023/">2023</a>
-              </div>
-            
-          
-        </div>
-      
-        <div class="menu-item">
-          
-          <a class="nav-link link-secondary" href="/people/">People</a>
-          
-        </div>
-      
-        <div class="menu-item">
-          
-          <a class="nav-link link-secondary" href="/publications/">Publications</a>
-          
-        </div>
-      
-    </div>
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/books/">Books</a>
+      </div>
+    
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/articles/">Academic Articles</a>
+      </div>
+    
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/projects/">Research Projects</a>
+      </div>
+    
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/teaching/">University Teaching</a>
+      </div>
+    
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/videos/">Attic Philosophy</a>
+      </div>
+    
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/glossary/">Philosophy Glossary</a>
+      </div>
+    
+      <div class="menu-item">
+      <a class="nav-link link-secondary" href="/tutoring/">Private Tutoring</a>
+      </div>
+    
   </div>
 
+</div>
 
-    <header class="container-sm">
-      <div class="container-sm">
-        <div class="row gy-4 gx-0">
-          <div class="col-lg-6">
-            <div class="my-2">
-              
-<p class="title">Truthmaker Semantics</p>
 
+
+
+
+        <header class="container-sm">
+            <div class="container-sm">
+                <div class="row gy-4 gx-0">
+                    <div class="col-lg-12">
+                        <div class="my-2">
+                            <p class="title">Mark Jago</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      
+        </header>
+
+        <section class="container py-1" id="content">
+            
 
 
-
-      
-      
-      </div>
-    </header>
-
-    <section class="container py-1" id="content">
-      
 
 
 
 <div class="container-sm">
   <div class="row gy-3 gx-4">
-    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-      <div class="four-square">
-        <p class="dropcaps">
-          <b>
-            Truthmaker semantics is a new and exciting approach to semantics,
-            with applications in logic, philosophy, and linguistics.
-          </b>
-        </p>
 
-        <p>
-          Contemporary philosophical semantics is riddled with <em>anomalies</em>,
-          that is: logical and semantic phenomena that the prevailing
-          possible-worlds account struggles to explain. The anomalies in question
-          arise when two equivalent propositions behave in logically dissimilar
-          ways. This happens, for example, when we're giving metaphysical
-          explanations <a
-            href="http://dx.doi.org/10.1017/CBO9781139149136.002">(Fine
-            2012a)</a>, when we're reasoning about counterfactual situations <a
-            href="http://dx.doi.org/10.5840/jphil201210938">(Fine 2012b)</a>, or
-          when we're giving certain kinds of permissions <a
-            href="http://dx.doi.org/10.1111/1746-8361.12068">(Fine 2014)</a>. This
-          phenomenon is known in the literature as &laquo;<a
-            href="https://plato.stanford.edu/entries/hyperintensionality/">hyperintensionality</a>&raquo;.
-          It presents a <em>deep problem</em> for the possible-worlds paradigm,
-          which treats equivalent propositions as interchangeable.
-        </p>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="four-square">
+          <p class="dropcaps"><span class="dropcaps">I am a philosopher and logician.</span> I write books and articles, give research talks, teach at the University of Nottingham, and make philosophy videos for my YouTube channel, Attic Philosophy. My work spans metaphysics, language, logic, philosophy of mind, and social philosophy, covering topics from impossible worlds to questions of truth, essence, and how we reason about what cannot be.</p>
+          <p>My recent research centres around three main themes. First, I investigate how we think and reason about impossible situations—things that couldn't possibly be the case but which we can still meaningfully contemplate. Second, I explore questions of truth and truthmaking in metaphysics, asking what makes true statements true and how truth relates to reality. Third, I examine fundamental questions about how the world is ultimately structured, including work on essence, material objects, and the relationships between different levels of reality. I'm also developing ideas about vagueness, relevant logic, and modal accounts of knowledge. Much of this work feeds into Truthmaker Semantics, a framework developed by Kit Fine for understanding meaning and content.</p>
+        </div>
       </div>
-    </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <p>I've published several books with Oxford University Press: <em>The Impossible</em> (2014) on meaningful thought about impossibility, <em>Reality Making</em> (2016, edited) on grounding and fundamentality, <em>What Truth Is</em> (2018) on truthmaking, and <em>Impossible Worlds</em> (2019, with Franz Berto). I'm currently co-writing a textbook on Truthmaker Semantics.</p>
+        <p>Through Attic Philosophy, I bring university-level philosophical discussion to general audiences. The channel features over 100 videos covering core philosophical concepts and debates, with new content added weekly. Whether through academic research, university teaching, or public engagement, my goal is to make philosophy accessible, rigorous, and relevant to the questions that matter most.</p>
+      </div>
+  </div>
+</div>
 
+
+<div class="container-sm">
+  <div class="row gy-3 gx-4">
+    
     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> Books</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            Information about the books I&#39;ve written, mostly for an academic audience
+            <a href="https://www.markjago.net/books/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
 
-           <p>
-        Truthmaker semantics solves the logical and semantic problems arising
-        from hyperintensionality by analyzing truth in a more careful and
-        nuanced way than possible-worlds semantics. Rather than just looking at
-        the collection of worlds where a given proposition is true, truthmaker
-        semantics asks <em>why</em> the proposition is true in those worlds.
-        This results in a rich and fruitful semantic framework, which has found
-        many applications in logic, philosophy, and linguistics <a
-          href="http://dx.doi.org/10.1002/9781118972090.ch22">(Fine 2016)</a>.
-      </p>
-
-      <p>
-        This website is intended as a hub for researchers of all colors
-        that want to learn more about truthmaker semantics. It's not much yet,
-        but it is under active development. Please
-        <a href="/contact/">
-          <i class="fa fa-envelope fa-xs"></i>contact
-        </a>
-        the maintainers if you'd like to contribute or know more.
-      </p>
+            </p>
+        </div>
+</div>
 
     </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> Academic Articles</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            Journal papers and book chapters
+            <a href="https://www.markjago.net/articles/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
+
+            </p>
+        </div>
+</div>
+
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> Research Projects</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            What I&#39;m working on.
+            <a href="https://www.markjago.net/projects/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
+
+            </p>
+        </div>
+</div>
+
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> University Teaching</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            What I teach
+            <a href="https://www.markjago.net/teaching/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
+
+            </p>
+        </div>
+</div>
+
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> Attic Philosophy</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            My YouTube channel, bringing University-level philosophical discussion to a general audience. Here you&#39;ll find accessible philosophical discussion and teaching videos aimed at undergraduates.
+            <a href="https://www.markjago.net/videos/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
+
+            </p>
+        </div>
+</div>
+
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> Philosophy Glossary</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            A-Z video explainers of the difficult concepts and &#39;isms&#39; that crop up in philosophy.
+            <a href="https://www.markjago.net/glossary/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
+
+            </p>
+        </div>
+</div>
+
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="box">
+        <div class="box-header">
+          <h4> Private Tutoring</h4>
+        </div>
+        <div class="box-body">
+            <p>
+            I offer private tuition to a small number of philosophy and logic students, on a one-to-one basis.
+            <a href="https://www.markjago.net/tutoring/" class="">
+                <span class="">[&nbsp;More&nbsp;] </span>
+            </a>
+
+            </p>
+        </div>
+</div>
+
+    </div>
+    
   </div>
 </div>
 
 
 
+            <div class="spacer"></div>
+        </section>
 
 
-
-
-
-
-
-
-
-    </section>
-
-    <footer class="fixed-bottom d-none d-md-block py-0 footer">
-      
+          
+        <footer class="fixed-bottom d-none d-md-block py-0 footer">
+          
 
 <div class="container-sm">
   <div class="container-sm">
     <div class="row gy-0 gx-4 foot-grid">
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        <a href="https://www.youtube.com/channel/UCloxctCq_5RCfRnYf1LuPyg" class="fa fa-youtube" target="_blank"></a>
-        <a href="https://github.com/truthmakersemantics" class="fa fa-github" target="_blank"></a>
+        
+        <a href="http://youtube.com/c/AtticPhilosophy" class="fa fa-youtube"></a>
+        <a href="https://scholar.google.com/citations?hl=en&user=D_EmeUMAAAAJ" class="fa fa-google"></a>
+        <a href="https://twitter.com/mark_jago" class="fa fa-twitter"></a>
+        
+
       </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-        <h6>Supported by</h6>
-        <img src="/img/footer/NYUlogo.png" class="logo" alt="NYU">
-        <img src="/img/footer/UoNlogo.png" class="logo" alt="UoN">
-        <img src="/img/footer/UUlogo.png" class="logo" alt="UU">
-      </div>
+        </div>
       <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
         <div class="copyright">
-          <p>Site maintained by Johannes Korbmacher & Mark Jago</p>
-          <p>&copy; The Truthmakers, 2023</p>
+          <p>&copy; Mark Jago 2022</p>
           </div>
       </div>
     </div>
@@ -234,8 +350,37 @@
 </div>
 
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    </footer>
-  </body>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        </footer>
+        <footer class="d-block d-md-none py-0 footer">
+          
+
+<div class="container-sm">
+  <div class="container-sm">
+    <div class="row gy-0 gx-4 foot-grid">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        
+        <a href="http://youtube.com/c/AtticPhilosophy" class="fa fa-youtube"></a>
+        <a href="https://scholar.google.com/citations?hl=en&user=D_EmeUMAAAAJ" class="fa fa-google"></a>
+        <a href="https://twitter.com/mark_jago" class="fa fa-twitter"></a>
+        
+
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+        </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+        <div class="copyright">
+          <p>&copy; Mark Jago 2022</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        </footer>
+    </body>
 </html>
