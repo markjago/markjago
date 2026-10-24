@@ -1,231 +1,363 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description"
-              content="Mark Jago">
-        <meta name="author"
-              content="Mark Jago">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>Mark Jago</title>
-        <link rel="icon"
-              type="image/png"
-              href="data:image/png;base64,">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        
-        <link href="/css/custom.css" rel="stylesheet">
-        
-        <script src="https://kit.fontawesome.com/1d773f205f.js" crossorigin="anonymous"></script>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Attic Philosophy Tutoring — One-to-one tuition in philosophy &amp; logic</title>
+  <meta name="description" content="Rigorous, personalised philosophy tutoring for undergraduates, postgraduates, and adult learners. One-to-one tuition in metaphysics, epistemology, philosophy of mind, logic and formal methods." />
+  <link rel="canonical" href="https://www.markjago.net/tutoring/" />
+  <link rel="icon" type="image/svg+xml" href="assets/AP_logo.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Attic Philosophy Tutoring — One-to-one tuition in philosophy &amp; logic" />
+  <meta property="og:description" content="Rigorous, personalised philosophy tutoring for undergraduates, postgraduates, and adult learners." />
+  <meta property="og:url" content="https://www.markjago.net/tutoring/" />
+  <meta name="twitter:card" content="summary" />
 
-        <script>
-            function showDiv() {
-        var x = document.getElementById("menu-items");
-        if (x.style.display === "none") {
-        x.style.display = "inline-flex";
-        } else {
-        x.style.display = "none";
-        }
-        }
+  <!-- Fonts: Newsreader, Geist, Geist Mono (self-hosted, see styles/fonts.css) -->
 
-         
-        function openNav() {
-          document.getElementById("myNav").style.height = "100%";
-          document.getElementById("showNavButton").style.display = "none";
-          document.getElementById("hideNavButton").style.display = "block";
-        }
+  <link rel="stylesheet" href="styles/fonts.css" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/site.css" />
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
 
-         
-        function closeNav() {
-          document.getElementById("myNav").style.height = "0%";
-          document.getElementById("hideNavButton").style.display = "none";
-          document.getElementById("showNavButton").style.display = "block";
-        }
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <div class="nav__inner container-wide">
+      <a href="#top" class="nav__mark" aria-label="Attic Philosophy Tutoring — home">
+        <img class="nav__mark-glyph" src="assets/AP_logo.svg" alt="" aria-hidden="true" />
+        <span class="nav__mark-word">Attic <em>Philosophy</em> Tutoring</span>
+      </a>
 
-            </script>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-        
-        
-        
-        
-    </head>
-    <body>
-
-      
-
-
-
-
-
-<nav class="header navbar sticky-top">
-    <div class="container-fluid px-5">
-      <div class="container-sm">
-        
-
-        
-
-
-
-
-
-        <div class="container-sm">
-                <a class="menu-title header-TMS" href="/"> ⊩ </a>
-                <a id="showNavButton" class="menu-title menu-button" onclick="openNav()"><i class="fa-solid fa-angles-down"></i></a>
-                <a id="hideNavButton" class="menu-title menu-button" onclick="closeNav()"><i class="fa-solid fa-angles-up"></i></a>
-        </div>
-      </div>
+      <button class="nav__menu-btn" id="navMenuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="nav__menu-btn-bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
     </div>
-</nav>
+  </nav>
 
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <header class="hero" id="top">
+    <!-- Background: montage of typeset and handwritten logic -->
+    <div class="hero__bg" id="heroBg" aria-hidden="true">
+      <picture>
+        <source srcset="assets/hero.webp" type="image/webp" />
+        <img src="assets/hero.jpg" alt="" width="2560" height="1440" loading="eager" fetchpriority="high" />
+      </picture>
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
 
+    <div class="hero__inner container">
 
-<div id="myNav" class="overlay">
-
-  
-  <div class="overlay-content">
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/books/">Books</a>
+      <div class="hero__eyebrow">
+        <span class="mono-label-lg section-marker">One-to-one tuition · Online</span>
       </div>
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/articles/">Academic Articles</a>
+
+      <h1 class="hero__headline display-xl">
+        One-to-one philosophy and logic tutoring for <em>undergraduates, postgraduates,</em> and adult learners.
+      </h1>
+
+      <p class="hero__lede body-lg">
+        Rigorous, personalised, and built around your goals.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--teal btn--lg">
+          Enquire about tuition
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#subjects" class="btn btn--ghost btn--lg">
+          What I tutor
+        </a>
       </div>
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/projects/">Research Projects</a>
+
+      <div class="hero__meta">
+        <span class="hero__meta-item">
+          <span class="mono-label">Tutoring from a University Professor</span>
+        </span>
+        <span class="hero__meta-dot" aria-hidden="true"></span>
+        <span class="hero__meta-item">
+          <span class="mono-label">Tailored to your syllabus</span>
+        </span>
+        <span class="hero__meta-dot" aria-hidden="true"></span>
+        <span class="hero__meta-item">
+          <span class="mono-label">Online sessions · Flexible across time zones</span>
+        </span>
       </div>
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/teaching/">University Teaching</a>
-      </div>
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/videos/">Attic Philosophy</a>
-      </div>
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/glossary/">Philosophy Glossary</a>
-      </div>
-    
-      <div class="menu-item">
-      <a class="nav-link link-secondary" href="/tutoring/">Private Tutoring</a>
-      </div>
-    
-  </div>
 
-</div>
+    </div>
+  </header>
 
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="about" id="about" data-wm-parallax>
+    <div class="container about__grid">
 
+      <div class="about__copy">
+        <span class="mono-label-lg section-marker">About the tutor</span>
 
+        <h2 class="display-lg">
+          A scholarly approach, taught <em>plainly</em>.
+        </h2>
 
-
-        <header class="container-sm">
-            <div class="container-sm">
-                <div class="row gy-4 gx-0">
-                    <div class="col-lg-12">
-                        <div class="my-2">
-                            <p class="title">Private Tutoring</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section class="container py-1" id="content">
-            
-    <p>I offer private tuition to a small number of philosophy and logic students, on a one-to-one basis.</p>
-<p>For each student, I put together a unique package of tuition, based on their aims and needs, whether this be:</p>
-<ul>
-<li>Passing an upcoming exam</li>
-<li>Progressing with a university or adult-education course</li>
-<li>Developing a general interest</li>
-</ul>
-<p>For students looking for a general introduction to philosophy, we might cover a range of philosophical topics, at a level appropriate to your prior knowledge and skills.</p>
-<p>For students working to a fixed syllabus or wanting to develop a specific interest, I can put together a targeted set of materials to investigate those topics in depth.</p>
-<p>Specific topics we may cover include:</p>
-<ul>
-<li>Philosophy of mind and consciousness</li>
-<li>Metaphysics</li>
-<li>Epistemology (the theory of knowledge)</li>
-<li>Philosophy of Science</li>
-<li>Philosophy of language</li>
-<li>Theories of truth and meaning</li>
-<li>Formal or informal Logic</li>
-</ul>
-<p>Specific &lsquo;from the canon&rsquo; philosophers we might cover include (although I&rsquo;m open to pother suggestions!):</p>
-<ul>
-<li>Descartes</li>
-<li>Locke</li>
-<li>Wittgenstein</li>
-<li>Frege and Russell</li>
-</ul>
-<p>If you&rsquo;d like more information about one-to-one tuition with me, please email me at <!-- raw HTML omitted --><a href="mailto:mark.jago@nottingham.ac.uk">mark.jago@nottingham.ac.uk</a><!-- raw HTML omitted -->.</p>
-
-
-
-            <div class="spacer"></div>
-        </section>
-
-
-          
-        <footer class="fixed-bottom d-none d-md-block py-0 footer">
-          
-
-<div class="container-sm">
-  <div class="container-sm">
-    <div class="row gy-0 gx-4 foot-grid">
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        
-        <a href="http://youtube.com/c/AtticPhilosophy" class="fa fa-youtube"></a>
-        <a href="https://scholar.google.com/citations?hl=en&user=D_EmeUMAAAAJ" class="fa fa-google"></a>
-        <a href="https://twitter.com/mark_jago" class="fa fa-twitter"></a>
-        
-
-      </div>
-      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+        <div class="about__text">
+          <p class="body-lg">
+            I&rsquo;m a philosopher and a logician with over two decades of university lecturing experience.
+            My private students range from sixth-formers preparing for
+            university interviews to PhD candidates working through their thesis arguments &mdash; and a good many curious
+            adults reading philosophy for the pleasure of it.
+          </p>
+          <p class="body-md">
+            Tuition is one-to-one and built around the questions you actually want to answer. Sessions move at your pace:
+            we read closely, argue carefully, and write clearly. The aim is always the same &mdash; to leave you thinking
+            more rigorously than you did an hour earlier.
+          </p>
+          <p class="body-md">
+            Alongside tutoring I run the <strong style="color: var(--ink); font-weight: 500;">Attic Philosophy</strong>
+            YouTube channel, where I cover topics from formal logic to free will for a general audience &mdash; it&rsquo;s
+            a fair sample of the way I teach.
+          </p>
         </div>
-      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-        <div class="copyright">
-          <p>&copy; Mark Jago 2022</p>
+
+        <a class="about__yt" href="https://www.youtube.com/@AtticPhilosophy" target="_blank" rel="noopener noreferrer">
+          <span class="about__yt-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </span>
+          <span class="about__yt-text">
+            <small>YouTube</small>
+            <span>
+              Attic Philosophy channel
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" /><path d="M7 17 17 7" />
+              </svg>
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <div class="about__portrait-wrap">
+        <div class="about__portrait">
+          <img src="assets/portrait-960.jpg" srcset="assets/portrait-480.jpg 480w, assets/portrait-960.jpg 960w"
+               sizes="(max-width: 880px) 380px, 440px" width="960" height="1200"
+               alt="Black-and-white portrait of Mark Jago" loading="lazy" />
+        </div>
+        <div class="about__portrait-tag">
+          <span class="mono-label">Mark Jago</span>
+          <span class="body-sm">Philosopher &amp; logician</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SUBJECTS
+       ============================================================ -->
+  <section class="subjects" id="subjects">
+    <div class="container">
+
+      <div class="subjects__head">
+        <div>
+          <span class="mono-label-lg section-marker">Areas of tuition</span>
+          <h2 class="display-lg">What I <em>tutor</em>.</h2>
+        </div>
+        <div class="subjects__head-meta">
+          <p class="body-md">
+            Two core offerings, taught in depth &mdash; with supplementary support where it&rsquo;s useful.
+          </p>
+        </div>
+      </div>
+
+      <!-- Primary tier -->
+      <div class="subjects__primary">
+        <article class="subj-card">
+          <span class="subj-card__num">01</span>
+          <h3 class="subj-card__title">Philosophy</h3>
+          <p class="subj-card__desc body-md">
+            Philosophy of mind and consciousness, metaphysics, epistemology, philosophy of science,
+            philosophy of language, and theories of truth and meaning &mdash; or reading from the canon:
+            Descartes, Locke, Wittgenstein, Frege and Russell. Whether you&rsquo;re reading for a degree,
+            writing a dissertation, or following an adult-education course, sessions are shaped around
+            your texts and arguments.
+          </p>
+          <div class="subj-card__topics">
+            <span class="subj-card__topic">Mind &amp; consciousness</span>
+            <span class="subj-card__topic">Metaphysics</span>
+            <span class="subj-card__topic">Epistemology</span>
+            <span class="subj-card__topic">Philosophy of science</span>
+            <span class="subj-card__topic">Philosophy of language</span>
+            <span class="subj-card__topic">Truth &amp; meaning</span>
           </div>
-      </div>
-    </div>
-  </div>
-</div>
+        </article>
 
-
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-        </footer>
-        <footer class="d-block d-md-none py-0 footer">
-          
-
-<div class="container-sm">
-  <div class="container-sm">
-    <div class="row gy-0 gx-4 foot-grid">
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-        
-        <a href="http://youtube.com/c/AtticPhilosophy" class="fa fa-youtube"></a>
-        <a href="https://scholar.google.com/citations?hl=en&user=D_EmeUMAAAAJ" class="fa fa-google"></a>
-        <a href="https://twitter.com/mark_jago" class="fa fa-twitter"></a>
-        
-
-      </div>
-      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-        </div>
-      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
-        <div class="copyright">
-          <p>&copy; Mark Jago 2022</p>
+        <article class="subj-card">
+          <span class="subj-card__num">02</span>
+          <h3 class="subj-card__title">Logic &amp; <em>Formal Methods</em></h3>
+          <p class="subj-card__desc body-md">
+            Propositional and predicate logic, modal logic, set theory, proof techniques, and the formal tools
+            philosophers actually use. For students who want the symbolic side taught properly &mdash; from first
+            principles to research-level material.
+          </p>
+          <div class="subj-card__topics">
+            <span class="subj-card__topic">Propositional</span>
+            <span class="subj-card__topic">Predicate</span>
+            <span class="subj-card__topic">Modal</span>
+            <span class="subj-card__topic">Set theory</span>
+            <span class="subj-card__topic">Proof</span>
+            <span class="subj-card__topic">Higher-order</span>
+            <span class="subj-card__topic">Non-classical</span>
           </div>
+        </article>
       </div>
+
+      <!-- Secondary tier -->
+      <div class="subjects__also">
+        <div class="subjects__also-head">
+          <span class="subjects__also-title">Also available</span>
+          <span class="mono-label" style="color: var(--ink-3);">Supplementary tuition</span>
+        </div>
+        <div class="subjects__also-grid">
+          <article class="subj-mini">
+            <span class="subj-mini__title">Academic Writing Skills</span>
+            <span class="subj-mini__desc">
+              Building clear, well-structured philosophical arguments on the page &mdash; from essay
+              planning to revising drafts of long-form work.
+            </span>
+          </article>
+          <article class="subj-mini">
+            <span class="subj-mini__title">CV &amp; Application Materials</span>
+            <span class="subj-mini__desc">
+              Personal statements, research proposals, and academic CVs for postgraduate
+              applications and funding competitions.
+            </span>
+          </article>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
+  </section>
 
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
 
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-        </footer>
-    </body>
+      <div class="contact__head">
+        <span class="mono-label-lg section-marker" style="justify-content: center;">Enquire</span>
+        <h2 class="display-lg">
+          Tell me a little about <em>what you&rsquo;re working on.</em>
+        </h2>
+        <p class="body-lg">
+          A few lines is plenty &mdash; the level you&rsquo;re studying at and what you&rsquo;d like help with.
+        </p>
+      </div>
+
+      <div class="contact__form-wrap" id="contactWrap">
+        <form class="contact__form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="22ce9429-20cc-4bd0-a2eb-a643000eeac9" />
+          <input type="hidden" name="subject" value="Tuition enquiry (Attic Philosophy Tutoring)" />
+          <input type="hidden" name="from_name" value="Attic Philosophy Tutoring website" />
+          <!-- Spam trap: hidden from people, bots tend to fill it in -->
+          <input type="checkbox" name="botcheck" class="contact__trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="field">
+            <label for="level">Level of study</label>
+            <select id="level" name="level" required>
+              <option value="" disabled selected>Select a level</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Postgraduate">Postgraduate</option>
+              <option value="PhD">PhD</option>
+              <option value="Adult learner">Adult learner</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="topic">Subject of interest</label>
+            <input id="topic" name="topic" type="text" placeholder="e.g. Modal logic, metaphysics" />
+          </div>
+
+          <div class="field field--full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="A few lines about what you&rsquo;d like to work on, your goals, and any deadlines."></textarea>
+          </div>
+
+          <div class="contact__submit">
+            <button type="submit" class="btn btn--bone btn--lg" id="contactSubmit">
+              Send enquiry
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <p class="contact__error" id="contactError" role="alert" hidden>
+            Sorry, that didn&rsquo;t send. Please try again in a moment<span id="contactFallback"></span>.
+          </p>
+
+          <p class="contact__privacy">
+            Your details are used only to reply to your enquiry. Messages are delivered by
+            <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer">Web3Forms</a>.
+          </p>
+        </form>
+
+        <div class="contact__thanks" id="contactThanks" role="status" aria-live="polite">
+          <div class="contact__thanks-tick" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+          </div>
+          <h3>Thank you &mdash; <em>your message is on its way.</em></h3>
+          <p>I&rsquo;ll reply by email. In the meantime, do feel free to browse the <a href="https://www.youtube.com/@AtticPhilosophy" target="_blank" rel="noopener noreferrer">YouTube channel</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="foot">
+    <div class="container foot__inner">
+      <span>© 2026 Attic Philosophy Tutoring · <a href="https://markjago.net" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; text-underline-offset: 3px;">markjago.net</a></span>
+      <nav class="foot__links" aria-label="Elsewhere">
+        <a href="https://www.youtube.com/@AtticPhilosophy" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://bsky.app/profile/atticphilosophy.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a>
+        <a href="https://x.com/PhilosophyAttic" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://scholar.google.com/citations?user=D_EmeUMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>
